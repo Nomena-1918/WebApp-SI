@@ -29,7 +29,7 @@
           <a class="nav-link" href="#">Profil</a> <!--Infos persos-->
         </li>
         <li class="nav-item px-5">
-          <a class="nav-link" href="<?php echo base_url("/choix_objectif"); ?>">Nouveau programme</a> <!--Choisir objectif : check si possible avant-->
+          <a class="nav-link" href="<?php echo base_url("index.php/choix_objectif"); ?>">Nouveau programme</a> <!--Choisir objectif : check si possible avant-->
         </li>
         <li class="nav-item px-5">
           <a class="nav-link" href="#">Gestion porte-monnaie</a> <!--Argent actuel, demande de recharge-->
