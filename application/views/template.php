@@ -31,7 +31,7 @@
   </style>
 </head>
 <body>
-<?php echo base_url(); ?>
+
     <div class="wrapper">
         <?php $this->load->view('header'); ?>
         <div class="container">
@@ -39,7 +39,7 @@
         </div>
         <div class="push"></div>
     </div>
-
+    <?php echo base_url(); ?>
     <?php $this->load->view('footer'); ?>
     <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 </body>
