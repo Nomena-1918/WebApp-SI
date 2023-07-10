@@ -1,0 +1,27 @@
+
+
+INSERT INTO genre VALUES (default ,'Homme');
+INSERT INTO genre VALUES (default ,'Femme');
+
+INSERT INTO code VALUES(default,00110,15000);
+INSERT INTO code VALUES(default,00111,15000);
+INSERT INTO code VALUES(default,00112,15000);
+INSERT INTO code VALUES(default,00113,15000);
+INSERT INTO code VALUES(default,00114,15000);
+INSERT INTO code VALUES(default,00115,10000);
+INSERT INTO code VALUES(default,00116,10000);
+INSERT INTO code VALUES(default,00117,10000);
+INSERT INTO code VALUES(default,00118,10000);
+INSERT INTO code VALUES(default,00119,10000);
+INSERT INTO code VALUES(default,00120,20000);
+INSERT INTO code VALUES(default,00121,20000);
+INSERT INTO code VALUES(default,00122,20000);
+INSERT INTO code VALUES(default,00121,20000);
+INSERT INTO code VALUES(default,00122,20000);
+
+
+INSERT INTO profil VALUES (default,'admin',2,160,60);
+INSERT INTO profil VALUES (default,'Nomena',1,165,65);
+INSERT INTO profil VALUES (default,'Mirindra',2,156,50);
+INSERT INTO profil VALUES (default,'Faniriana',1,165,65);
+INSERT INTO profil VALUES (default,'Miharitiana',1,155,55);
