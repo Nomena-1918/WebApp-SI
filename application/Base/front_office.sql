@@ -46,15 +46,6 @@ CREATE TABLE entreeMonnaie(
     FOREIGN KEY (idProfil) REFERENCES profil(id)
 );
 
--- CREATE TABLE sortieMonnaie(
---     id serial PRIMARY KEY,
---     idCode int,
---     idProfil int,
---     valeur decimal,
---     FOREIGN KEY (idCode) REFERENCES code(id),
---     FOREIGN KEY (idProfil) REFERENCES profil(id)
--- );
-
 CREATE TABLE achatRegime(
     id serial PRIMARY KEY,
     idProfil int,
