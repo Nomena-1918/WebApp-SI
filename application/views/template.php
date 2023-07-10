@@ -21,7 +21,7 @@
     .footer {
       background-color: #f8f9fa; /* Footer background color */
       height: 20px; /* Adjust the height as per your requirements */
-      line-height: 40px;
+      line-height: 50px;
 
       color: #333; /* Adjusted contrast color */
       padding: 20px;
@@ -39,7 +39,6 @@
         </div>
         <div class="push"></div>
     </div>
-    <?php echo base_url(); ?>
     <?php $this->load->view('footer'); ?>
     <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 </body>
