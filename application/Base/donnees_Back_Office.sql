@@ -78,7 +78,7 @@ dureeSport, variationPoids, poidsPlat) values
 (4, 5, 5, 2, '05:00', -0.8, 100),
 (4, 1, 1, 3, '05:00', -0.9, 200);
 
-
+/*
 --- REINIT ---
 delete from regime;
 alter sequence regime_id_seq restart with 1;
@@ -97,5 +97,6 @@ alter sequence plat_id_seq restart with 1;
 
 delete from profilAdmin;
 alter sequence profilAdmin_id_seq restart with 1;
+*/
 
 

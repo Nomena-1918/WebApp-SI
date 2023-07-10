@@ -10,8 +10,8 @@ INSERT INTO profil VALUES (default,'Mirindra',2,156,50);
 INSERT INTO profil VALUES (default,'Faniriana',1,165,65);
 INSERT INTO profil VALUES (default,'Miharitiana',1,155,55);
 
-INSERT INTO typeObjectif VALUES (default,'augmentation du poids');
-INSERT INTO typeObjectif VALUES (default,'reduction du poids');
+INSERT INTO typeObjectif VALUES (default,'Prise de poids');
+INSERT INTO typeObjectif VALUES (default,'Perte de poids');
 
 INSERT INTO objectif VALUES (default,1,1,70,'2023-07-01');
 INSERT INTO objectif VALUES (default,1,2,70,'2023-07-02');
@@ -50,7 +50,7 @@ INSERT INTO achatRegime VALUES (default,5,20000,'2023-07-01','2023-08-01');
 
 
  --- REINIT
-
+/*
 delete from genre;
 delete from profil;
 delete from typeObjectif;
@@ -66,4 +66,5 @@ alter sequence genre_id_seq  restart with 1;
 alter sequence objectif_id_seq  restart with 1;
 alter sequence profil_id_seq  restart with 1;
 alter sequence typeobjectif_id_seq  restart with 1;
+*/
 
