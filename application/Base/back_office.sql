@@ -18,7 +18,6 @@ CREATE TABLE sport(
 
 CREATE TABLE profilRegime(
     id serial PRIMARY KEY,
-    nom varchar(50),
     tailleDebut decimal,
     tailleFin decimal,
     poidsDebut decimal,
