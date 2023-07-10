@@ -5,6 +5,7 @@
 
     .navbar-dark .navbar-nav .nav-link:hover {
         color: #000; /* Couleur de fond lorsque le lien est survolé */
+        font-size: 18px;
     }
 
     .custom-bold {

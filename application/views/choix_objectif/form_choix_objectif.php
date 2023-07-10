@@ -15,8 +15,9 @@
         align-items: center;
         justify-content: center;
         height: 70%;
+        font-size: 18px;
     }
-    .card {
+    .card-header {
         font-size: 20px;
         font-weight: bold;
     }
