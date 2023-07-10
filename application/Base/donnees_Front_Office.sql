@@ -47,6 +47,10 @@ INSERT INTO achatRegime VALUES (default,3,20000,'2023-09-10','2023-09-20');
 INSERT INTO achatRegime VALUES (default,4,15000,'2023-10-01','2023-10-20');
 INSERT INTO achatRegime VALUES (default,5,20000,'2023-07-01','2023-08-01');
  
+
+
+ --- REINIT
+
 delete from genre;
 delete from profil;
 delete from typeObjectif;
