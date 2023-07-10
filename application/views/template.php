@@ -31,6 +31,7 @@
   </style>
 </head>
 <body>
+<?php echo base_url(); ?>
     <div class="wrapper">
         <?php $this->load->view('header'); ?>
         <div class="container">
