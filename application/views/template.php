@@ -21,7 +21,7 @@
     .footer {
       background-color: #f8f9fa; /* Footer background color */
       height: 20px; /* Adjust the height as per your requirements */
-      line-height: 50px;
+      line-height: 40px;
 
       color: #333; /* Adjusted contrast color */
       padding: 20px;
