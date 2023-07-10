@@ -13,7 +13,6 @@ INSERT INTO profil VALUES (default,'Miharitiana',1,155,55);
 INSERT INTO typeObjectif VALUES (default,'augmentation du poids');
 INSERT INTO typeObjectif VALUES (default,'reduction du poids');
 
-
 INSERT INTO objectif VALUES (default,1,1,70,'2023-07-01');
 INSERT INTO objectif VALUES (default,1,2,70,'2023-07-02');
 INSERT INTO objectif VALUES (default,1,3,55,'2023-07-04');
@@ -41,12 +40,6 @@ INSERT INTO entreeMonnaie VALUES(default,2,2,1);
 INSERT INTO entreeMonnaie VALUES(default,3,3,0);
 INSERT INTO entreeMonnaie VALUES(default,4,4,0);
 INSERT INTO entreeMonnaie VALUES(default,5,5,1);
-
--- INSERT INTO sortieMonnaie VALUES(default,1,1,);
--- INSERT INTO sortieMonnaie VALUES(default,2,2,);
--- INSERT INTO sortieMonnaie VALUES(default,3,3,);
--- INSERT INTO sortieMonnaie VALUES(default,4,4,);
--- INSERT INTO sortieMonnaie VALUES(default,5,5,);
 
 INSERT INTO achatRegime VALUES (default,1,15000,'2023-07-01','2023-08-01');
 INSERT INTO achatRegime VALUES (default,2,10000,'2023-08-01','2023-08-10');

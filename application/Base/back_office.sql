@@ -36,7 +36,7 @@ CREATE TABLE regime(
     idProfilRegime int,
     idPlat int , 
     idSport int,
-    idMoment int Unique , 
+    idMoment int, 
     dureeSport interval,
     variationPoids decimal,
     poidsPlat decimal, --en grammes
