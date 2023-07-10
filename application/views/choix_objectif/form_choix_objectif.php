@@ -1,27 +1,29 @@
 <style>
     .custom-form .form-group {
-      margin-bottom: 2rem; /* Espacement vertical entre les éléments */
+        margin-bottom: 2rem; /* Espacement vertical entre les éléments */
     }
     .custom-form .btn-primary {
-      width: 40%; /* Largeur complète du bouton */
+        width: 40%; /* Largeur complète du bouton */
     }
     .custom-form {
-      max-width: 400px; /* Largeur maximale du formulaire */
-      margin: 0 auto; /* Centrage horizontal du formulaire */
-      padding: 20px; /* Espace intérieur du formulaire */
-      font-size: 20px;
-      font-weight: bold;
+        max-width: 400px; /* Largeur maximale du formulaire */
+        margin: 0 auto; /* Centrage horizontal du formulaire */
+        padding: 20px; /* Espace intérieur du formulaire */
     }
     .custom-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+    }
+    .card {
+        font-size: 20px;
+        font-weight: bold;
     }
     
 </style>
 <div class="custom-container">
-<div class="card col-4">
+<div class="card col-5">
       <div class="card-header p-3">
         Prêt à devenir une meilleure version de soi-même ?
       </div>
