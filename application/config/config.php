@@ -29,8 +29,8 @@ $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : "";
 if(is_cli()){
    $config['base_url'] = '';
 }
-else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE){
-   $config['base_url'] = $protocol.$host."/WebApp-SI/";
+else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
+   $config['base_url'] = $protocol.$host.'/WebApp-SI/';
 }
 else {
     $allowed_hosts = ['projet-si.alwaysdata.net/projet-si/'];
