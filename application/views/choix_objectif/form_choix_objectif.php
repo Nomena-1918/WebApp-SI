@@ -9,6 +9,8 @@
       max-width: 400px; /* Largeur maximale du formulaire */
       margin: 0 auto; /* Centrage horizontal du formulaire */
       padding: 20px; /* Espace intérieur du formulaire */
+      font-size: 20px;
+      font-weight: bold;
     }
     .custom-container {
       display: flex;

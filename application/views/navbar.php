@@ -11,6 +11,7 @@
         font-weight: bold;
     }
 </style>
+
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3">
   <a class="navbar-brand px-4 custom-bold" href="#">App Nutrition</a>
