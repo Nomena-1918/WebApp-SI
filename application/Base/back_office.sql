@@ -8,7 +8,7 @@ CREATE TABLE profilAdmin(
 CREATE TABLE plat(
     id serial PRIMARY KEY,
     nom varchar(50),
-    prix decimal,
+    prixunitaire decimal
 );
 
 CREATE TABLE sport(
@@ -18,11 +18,10 @@ CREATE TABLE sport(
 
 CREATE TABLE profilRegime(
     id serial PRIMARY KEY,
-    nom varchar(50),
     tailleDebut decimal,
     tailleFin decimal,
     poidsDebut decimal,
-    poidsFint decimal
+    poidsFin decimal
 );
 
 CREATE TABLE moment(
@@ -40,7 +39,7 @@ CREATE TABLE regime(
     idMoment int Unique , 
     dureeSport interval,
     variationPoids decimal,
-    qte decimal,
+    poidsPlat decimal, --en grammes
     FOREIGN KEY (idProfilRegime) REFERENCES profilRegime(id),
     FOREIGN KEY (idPlat) REFERENCES plat(id),
     FOREIGN KEY (idMoment) REFERENCES moment(id)
