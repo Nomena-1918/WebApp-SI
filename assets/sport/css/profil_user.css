@@ -1,0 +1,4 @@
+.genre{
+    display: flex;
+    justify-content: space-between;
+}
