@@ -8,11 +8,14 @@
     }
 </style>
 
-<h1 class="py-3 mt-2">Programme détaillé</h1>
+<h1 class=" mt-2">Programme détaillé</h1>
 <div class="py-1">Nom : <?php echo $resultQuery->result()[0]->nom; ?></div>
 <div class="py-1">Objectif : <?php echo $resultQuery->result()[0]->objectif; ?></div>
 <div class="py-1">Valeur : <?php echo $valObjectif; ?> kg</div>
+<div class="py-1">Date début : <?php echo $dateDebut; ?> </div>
+<div class="py-1">Date fin : <?php echo  date_format($dateFin, 'Y-m-d'); ?> </div>
 <div class="py-1">Durée : <?php echo $dureepro; ?> jours</div>
+
 <div class="custom-container">
 <table class="table table-striped table-bordered">
     <thead class="thead-dark">
@@ -42,10 +45,12 @@
         <?php } ?>
     </tbody>
   </table>
-
 </div>
+
 <div class="mt-1">Variation poids par jour : <?php echo $sumVariationPoids; ?>kg</div>
 <div class="mt-1">Prix plats par jour : <?php echo $sumPrixJour; ?> Ar</div>
+<div class="mt-2">Porte-monnaie actuel : <?php echo $portemonnaie_actuel->result_array()[0]['monnaie_restante']; ?>Ar</div>
+
 <div class="mt-4">Prix total : <?php echo $sumPrixTotal; ?>Ar</div>
-<a href="<?php echo base_url(''); ?>" class="btn btn-primary mt-4">Acheter</a>
+<a href="<?php echo base_url(''); ?>" class="btn btn-primary mt-2">Acheter</a>
 

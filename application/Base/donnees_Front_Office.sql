@@ -55,10 +55,10 @@ INSERT INTO entreeMonnaie VALUES(default,14,3,1);
 insert into service values(default, 'Achat programme régime');
 insert into service values(default, 'Abonnement gold');
 
-INSERT INTO achatService VALUES (default,1,1,15000,'2023-07-01','2023-08-01');
-INSERT INTO achatService VALUES (default,2,1,10000,'2023-08-01','2023-08-10');
-INSERT INTO achatService VALUES (default,3,1,20000,'2023-09-10','2023-09-20');
-INSERT INTO achatService VALUES (default,4,1,15000,'2023-10-01','2023-10-20');
+INSERT INTO achatService VALUES (default,1,1,1500,'2023-07-01','2023-08-01');
+INSERT INTO achatService VALUES (default,2,1,1000,'2023-08-01','2023-08-10');
+INSERT INTO achatService VALUES (default,3,1,2000,'2023-09-10','2023-09-20');
+INSERT INTO achatService VALUES (default,4,1,1500,'2023-10-01','2023-10-20');
 INSERT INTO achatService VALUES (default,5,1,2000,'2023-07-01','2023-08-01');
 
 

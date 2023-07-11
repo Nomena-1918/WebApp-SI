@@ -31,7 +31,6 @@ class Choix_objectif extends CI_Controller {
 
 		// Programme détaillé avec durée
 		$valeur = $this->input->post('valeur');
-        $dateDebut = $this->input->post('dateDebut');
 
 		$data['valObjectif'] = $valeur;
 
@@ -69,13 +68,24 @@ class Choix_objectif extends CI_Controller {
 		// l'objectif de poids (++ ou --)
 		// ...
 
+		$this->load->helper('date');
+
+		$dateDebut = $this->input->post('dateDebut');
+		$data['dateDebut']=$dateDebut;
+
+		$data['dateFin'] = date_add(date_create($dateDebut), date_interval_create_from_date_string($data['dureepro']." days"));
+
+		$tab['entree_monnaie_total'] = 'entree_monnaie_total';
+		$tab['sortie_monnaie_total'] = 'sortie_monnaie_total';
+		$tab['monnaie_restante'] = 'monnaie_restante';
+
+		// Porte-monnaie actuel
+		$data['portemonnaie_actuel']=$this->Bdd->select_where('v_portemonnaie_actuel', 'id', $idUser, $tab);
+
 		// La vue spécifique à load
 		$data['content_view'] = 'choix_objectif/detail_programme_adequat';
-		
 		
 		// Load du template
 		$this->load->view('template', $data);
 	}
-
-
 }
