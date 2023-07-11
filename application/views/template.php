@@ -23,9 +23,13 @@
 
     <div class="wrapper">
         <?php $this->load->view('header'); ?>
+
+
         <div class="container">
             <?php $this->load->view($content_view); ?>
         </div>
+
+        
         <div class="push"></div>
     </div>
     <?php $this->load->view('footer'); ?>
