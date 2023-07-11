@@ -76,7 +76,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'postgresql-projet-si.alwaysdata.net',
+	'hostname' => 'localhost',
 	'username' => 'projet-si',
 	'password' => 'root123!',
 	'database' => 'projet-si_db',

@@ -30,3 +30,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 /tests/tests/
 /tests/results/
+
+# Config database
+/Applications/MAMP/htdocs/WebApp-SI/application/config/database.php
