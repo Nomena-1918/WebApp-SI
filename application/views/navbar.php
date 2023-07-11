@@ -22,7 +22,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse px-4" id="navbarNav">
+    <div class="collapse navbar-collapse px-1" id="navbarNav">
       <ul class="navbar-nav ml-auto d-lg-flex px-2">
         <li class="nav-item px-2">
           <a class="nav-link" href="#">Back-office</a> <!--Lien vers back-office-->
