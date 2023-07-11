@@ -5,13 +5,10 @@ CREATE TABLE profilAdmin(
     nom varchar(50)
 );
 
--------------------
 CREATE TABLE plat(
     id serial PRIMARY KEY,
-    picture varchar(50),
     nom varchar(50),
-    calorie int,
-    prix decimal
+    prixunitaire decimal
 );
 
 CREATE TABLE sport(
@@ -43,9 +40,7 @@ CREATE TABLE regime(
     dureeSport interval,
     variationPoids decimal,
     poidsPlat decimal, --en grammes
-    idTypeObjectif int,
     FOREIGN KEY (idProfilRegime) REFERENCES profilRegime(id),
     FOREIGN KEY (idPlat) REFERENCES plat(id),
-    FOREIGN KEY (idMoment) REFERENCES moment(id),
-    FOREIGN KEY (idTypeObjectif) REFERENCES typeObjectif(id)
+    FOREIGN KEY (idMoment) REFERENCES moment(id)
 );

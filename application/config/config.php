@@ -24,12 +24,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$root = "http://" . $_SERVER['HTTP_HOST'];
-$root .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
-
-$config['base_url'] = $root;
-
-
+$protocol = is_https() ? "https://" : "http://";
+$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : "";
+if(is_cli()){
+   $config['base_url'] = '';
+}
+else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
+   $config['base_url'] = $protocol.$host.'/WebApp-SI/';
+}
+else {
+    $allowed_hosts = ['projet-si.alwaysdata.net/projet-si/'];
+    $config['base_url'] = in_array($host, $allowed_hosts) ? $protocol.$host."/" : "we-do-not-recognise-this-host.com";
+}
 
 /*
 |--------------------------------------------------------------------------
