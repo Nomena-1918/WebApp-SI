@@ -1,4 +1,4 @@
-INSERT into profilAdmin(nom) values ('admin');
+INSERT into profilAdmin(nom, email, mdp) values ('admin', 'admin@gmail.com', 'root123!');
 
 insert into plat(nom) values 
 ('Céréales'),
