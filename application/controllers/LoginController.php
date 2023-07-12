@@ -60,7 +60,11 @@ public function Login(){
        }
        
   }
-  
+  public function get_all_plat() {
+    $this->load->model('Bdd');
+    $plats['plats'] = $this->Bdd->select("plat");
+    $this->load->view('allplat/table_advanced',$plats);
+}
   public function getAdmin($tab){
     $this->load->model('Bdd');
 
@@ -71,7 +75,7 @@ public function Login(){
     foreach($data['admins']->result_array() as $row){ 
       if($tab['email']==$row['email'] && $tab['mdp']==$row['mdp']){
         $check['tocheck'] = true;
-        $this->load->view('allplat/table_advanced');
+        $this->get_all_plat();
       }
 
     }

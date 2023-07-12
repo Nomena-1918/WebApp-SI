@@ -37,6 +37,7 @@ class Choix_objectif extends CI_Controller {
 		// Données sans durée
 		$this->db->select('*');
 		$this->db->from('v_programme_utilisateur');
+		$this->db->order_by('idmoment');
 		$this->db->where('id', $idUser);
 		$this->db->where('idtypeobjectif', $idTypeObjectif);
 
