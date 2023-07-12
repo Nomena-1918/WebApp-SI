@@ -33,6 +33,7 @@ CREATE TABLE moment(
     heureFin time
 );
 
+
 CREATE TABLE regime(
     id serial PRIMARY KEY,
     idProfilRegime int,
@@ -42,7 +43,10 @@ CREATE TABLE regime(
     dureeSport interval,
     variationPoids decimal,
     poidsPlat decimal, --en grammes
+    idTypeObjectif int,
     FOREIGN KEY (idProfilRegime) REFERENCES profilRegime(id),
     FOREIGN KEY (idPlat) REFERENCES plat(id),
-    FOREIGN KEY (idMoment) REFERENCES moment(id)
+    FOREIGN KEY (idMoment) REFERENCES moment(id),
+    FOREIGN KEY (idTypeObjectif) REFERENCES typeObjectif(id)
 );
+
