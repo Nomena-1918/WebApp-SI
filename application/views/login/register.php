@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/slick.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/nice-select.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/style.css');?> ">
+	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/login.css');?> ">
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -44,18 +45,18 @@
 
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="<?php echo site_url('inscriptionController/register')?>" method="POST">
+    <form class="form-default" action="<?php echo site_url('inscriptionController/inscription')?>" method="GET">
         
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="index.html"><img src="assets/img/logo/loder.png" alt=""></a>
+                <a href="index.html"><img src="<?php echo base_url('assets/plat/img/hero/frutis.jpg') ?>" alt=""></a>
             </div>
-            <h2>Registration Here</h2>
+            <h2>Signing Up</h2>
 
             <div class="form-input">
-                <label for="name">Full name</label>
-                <input  type="text" name="name" placeholder="Full name">
+                <label for="name">Name</label>
+                <input  type="text" name="name" placeholder="Name">
             </div>
             <div class="form-input">
                 <label for="name">Email Address</label>
@@ -65,12 +66,25 @@
                 <label for="name">Password</label>
                 <input type="password" name="password" placeholder="Password">
             </div>
+            <div class="form-input">
+                <div class="genre">
+                    <label for="name">Genre</label>
+                    <select name="genre">
+                        <option value="1">Homme</option>
+                        <option valuer="2"s>Femme</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-input">
+                <label for="name">Date de naissance</label>
+                <input type="date" name="dtn" placeholder="Date de naissance">
+            </div>
           
            
             <div class="form-input pt-30">
                 
 
-                <input type="submit" name="submit" value="Registration">
+                <input type="submit" name="submit" value="Sign up">
             </div>
             <!-- Forget Password -->
             <a href="<?php echo site_url('loginController/login')?>" class="registration">Retour</a>

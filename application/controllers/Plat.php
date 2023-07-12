@@ -19,7 +19,7 @@ class Plat extends CI_Controller{
         $this->get_all_plat();
 
     }
-
+ 
     public function create_plat(){ $this->load->view('plat/plat'); }
 
     public function get_all_plat() {

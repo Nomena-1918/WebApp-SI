@@ -38,7 +38,6 @@ class Sport extends CI_Controller{
 
         $this->load->model('Bdd');
         $this->Bdd->update('sport',"id",$id,$tab);
-        $this->load->view('sport/table_advanced');
         $this->get_all_sport();
     }
 }
