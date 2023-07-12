@@ -13,6 +13,7 @@ class Sport extends CI_Controller{
         $data = array();
         $data['nom'] = $sport_name;
         $this->Bdd->insert('sport',$data);
+        $this->load->view('allsport/table_advanced');
     }
 
     public function get_all_sport() {
@@ -37,5 +38,6 @@ class Sport extends CI_Controller{
 
         $this->load->model('Bdd');
         $this->Bdd->update('sport',"id",$id,$tab);
+        $this->get_all_sport();
     }
 }

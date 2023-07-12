@@ -7,17 +7,15 @@ class InscriptionController extends CI_Controller {
 }
 
     public function Inscription(){
+        $donnee = array();
+        $donnee['name'] = $this->input->post('name');
+        $donnee['email'] = $this->input->post('email');
+        $donnee['mdp'] = $this->input->post('password');
+        $donnee['genre'] = $this->input->post('genre');
+        $donnee['dtn'] = $this->input->post('dtn');
+
         $this->load->model('Bdd');
-        $name = $this->input->post('name');
-        $mail = $this->input->post('email');
-        $mdp = $this->input->post('password');
-
-        $donnees = array();
-        $donnee['nomUsers'] = $name;
-        $donnee['email'] = $mail;
-        $donnee['mdp'] = $mdp;
-
-        $this->Bdd->insert('user',$donnee);
+        $this->Bdd->insert('utilisateur',$donnee);
     }
 
     public function Inscription_Admin(){

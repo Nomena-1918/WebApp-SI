@@ -17,8 +17,9 @@ class Plat extends CI_Controller{
         
         $this->load->model('Bdd');
         $this->Bdd->insert('plat',$data_plat);
+        $this->load->view('allplat/table_advanced');
     }
-
+ 
     public function create_plat(){ $this->load->view('plat/plat'); }
 
     public function get_all_plat() {
@@ -49,6 +50,7 @@ class Plat extends CI_Controller{
 
         $this->load->model('Bdd');
         $this->Bdd->update('plat',"id",$id,$tab);
+        $this->get_all_plat();
     }
 
 }
