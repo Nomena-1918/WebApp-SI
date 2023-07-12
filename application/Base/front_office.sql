@@ -5,13 +5,23 @@ CREATE TABLE genre(
     nom varchar(50)
 );
 
-CREATE TABLE profil(
+create table utilisateur(
     id serial PRIMARY KEY,
     nom varchar(50),
     idGenre int,
+    dtn date,
+    FOREIGN KEY (idGenre) REFERENCES genre(id)
+);
+alter table utilisateur add column email varchar(100);
+alter table utilisateur add column mdp varchar(50);
+
+
+CREATE TABLE profil(
+    id serial primary key,
+    idUtilisateur int unique,
     taille decimal,
     poids decimal,
-    FOREIGN KEY (idGenre) REFERENCES genre(id)
+    FOREIGN KEY (idUtilisateur) REFERENCES utilisateur(id)
 );
 
 
