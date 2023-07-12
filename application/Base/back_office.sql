@@ -4,6 +4,8 @@ CREATE TABLE profilAdmin(
     id serial PRIMARY KEY,
     nom varchar(50)
 );
+alter table profilAdmin add column email varchar(100);
+alter table profilAdmin add column mdp varchar(50);
 
 -------------------
 CREATE TABLE plat(

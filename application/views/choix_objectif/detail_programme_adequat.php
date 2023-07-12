@@ -51,6 +51,8 @@
 <div class="mt-1">Prix plats par jour : <?php echo $sumPrixJour; ?> Ar</div>
 <div class="mt-2">Porte-monnaie actuel : <?php echo $portemonnaie_actuel->result_array()[0]['monnaie_restante']; ?>Ar</div>
 
-<div class="mt-4">Prix total : <?php echo $sumPrixTotal; ?>Ar</div>
-<a href="<?php echo base_url(''); ?>" class="btn btn-primary mt-2">Acheter</a>
+<div class="mt-4">Prix total : <?php echo $sumPrixTotal; ?>Ar 
+<a href="<?php echo base_url(''); ?>" class="btn btn-primary mt-2 m-3">Acheter</a>
+</div>
+
 

@@ -29,7 +29,8 @@
         Prêt(e) à devenir la meilleure version de soi-même ?
       </div>
       <div class="card-body">
-        <form class="custom-form"  method="POST" action="Choix_objectif/traitementForm">
+        <form class="custom-form"  method="POST" action="<?php echo base_url('index.php/Choix_objectif/traitementForm') ?>">
+          
           <div class="form-group">
             <label for="selectObjectif">Définissez votre objectif :</label>
             <select class="form-control" id="selectObjectif" name="idObjectif">

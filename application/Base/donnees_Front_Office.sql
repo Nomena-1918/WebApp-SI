@@ -4,11 +4,11 @@ INSERT INTO genre VALUES (default ,'Homme');
 INSERT INTO genre VALUES (default ,'Femme');
 
 
-INSERT INTO utilisateur VALUES (default,'Vahatra',2, '2002-07-11');
-INSERT INTO utilisateur VALUES (default,'Nomena',1, '2003-07-11');
-INSERT INTO utilisateur VALUES (default,'Mirindra',2, '2004-07-11');
-INSERT INTO utilisateur VALUES (default,'Faniriana',1, '2003-07-11');
-INSERT INTO utilisateur VALUES (default,'Miharitiana',1, '2002-07-11');
+INSERT INTO utilisateur VALUES (default,'Vahatra',2, '2002-07-11', 'vh@gmail.com', 'root123!');
+INSERT INTO utilisateur VALUES (default,'Nomena',1, '2003-07-11', 'nm@gmail.com', 'root123!');
+INSERT INTO utilisateur VALUES (default,'Mirindra',2, '2004-07-11', 'mr@gamil.com', 'root123!');
+INSERT INTO utilisateur VALUES (default,'Faniriana',1, '2003-07-11', 'fr@gmail.com', 'root123!');
+INSERT INTO utilisateur VALUES (default,'Miharitiana',1, '2002-07-11', 'mh@gmail.com', 'root123!');
 
 
 INSERT INTO profil VALUES (default,1,160,60);

@@ -17,9 +17,11 @@ public function Login(){
     $check = array();
     $check['tocheck'] = false;
     $check['message'] = "Veuillez verifier vos infos";
-    foreach($data['users']->result_array() as $row){ 
+    
+    foreach($data['users']->result_array() as $row) { 
       if($tab['email']==$row['email'] && $tab['mdp']==$row['mdp']){
         $check['tocheck'] = true;
+        $idUser = $row['id'];
        // $this->load->view('');
       }
 
@@ -27,6 +29,20 @@ public function Login(){
     if($check['tocheck'] == false){
       $this->load->view('login/login', $check);
       
+    }
+    else {
+      $this->session->set_userdata('idUser', $idUser);
+
+      // Sélection base types objectif
+      $this->load->model('Bdd');
+      $data['result']=$this->Bdd->select('typeobjectif');
+
+      // La vue spécifique à load
+      $data['content_view'] = 'choix_objectif/form_choix_objectif'; 
+          
+      // Load du template
+      $this->load->view('template', $data);
+
     }
 
   }
@@ -42,20 +58,20 @@ public function Login(){
        }else {
         $this->getUser($tab);
        }
-
+       
   }
   
   public function getAdmin($tab){
     $this->load->model('Bdd');
 
-    $data['admins'] = $this->Bdd->select('profilAdmin');
+    $data['admins'] = $this->Bdd->select('profiladmin');
     $check = array();
     $check['tocheck'] = false;
     $check['message'] = "Veuillez verifier vos infos";
     foreach($data['admins']->result_array() as $row){ 
       if($tab['email']==$row['email'] && $tab['mdp']==$row['mdp']){
         $check['tocheck'] = true;
-       // $this->load->view('');
+        $this->load->view('plat/get_all_plat');
       }
 
     }

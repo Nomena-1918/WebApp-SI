@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Choix_objectif extends CI_Controller {
-
+/*
 	// Load view form
 	public function index()
 	{
@@ -19,7 +19,7 @@ class Choix_objectif extends CI_Controller {
 		// Load du template
 		$this->load->view('template', $data);
 	}
-
+*/
 	// Récupération des données de formulaire
 	// Sélection Proposition programme régime depuis base
 	// Load view détails programme avec data

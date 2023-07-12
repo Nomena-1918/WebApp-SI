@@ -1,4 +1,4 @@
-INSERT into profilAdmin(nom) values ('admin');
+INSERT into profilAdmin(nom, email, mdp) values ('admin', 'admin@gmail.com', 'root123!');
 
 insert into plat(picture,nom,calorie,prix) values 
 ('cereale.jpg','Céréales',10,20),

@@ -49,7 +49,7 @@
         <form class="form-default" action="<?php echo site_url('plat/update_plat/'.$row['id']); ?>" method="GET">
                 <?php } else {?>
                     <form class="form-default" action="<?php echo site_url('plat/receive_plat/'); ?>" method="GET">
-            <?php } ?>
+                <?php } ?>
         
         <div class="login-form">
             <!-- logo-login -->
@@ -62,32 +62,32 @@
                 <?php if ($plat != null) {?>
                     <input  type="text" name="plat" placeholder="<?php echo $row['nom'];?>">
                 <?php } else {?>
-                <input  type="text" name="plat" placeholder="Nom Plat">
-            <?php } ?>
+                    <input  type="text" name="plat" placeholder="Nom Plat">
+                <?php } ?>
             </div>
             <div class="form-input">
                 <label for="name">Photo</label>
                 <?php if ($plat != null) {?>
                     <input  type="text" name="photo" placeholder="<?php echo $row['picture'];?>">
                 <?php } else {?>
-                <input  type="text" name="photo" placeholder="Nom Photo">
-            <?php } ?>
+                    <input  type="text" name="photo" placeholder="Nom Photo">
+                <?php } ?>
             </div>
             <div class="form-input">
                 <label for="name">Prix</label>
                 <?php if ($plat != null) {?>
                     <input  type="text" name="prix" placeholder="<?php echo $row['prix'];?>">
                 <?php } else {?>
-                <input type="number" name="prix" placeholder="Prix Plat">
-            <?php } ?>
+                    <input type="number" name="prix" placeholder="Prix Plat">
+                <?php } ?>
             </div>
             <div class="form-input">
                 <label for="name">Apport calorique</label>
                 <?php if ($plat != null) {?>
                     <input  type="text" name="calorie" placeholder="<?php echo $row['calorie'];?>">
                 <?php } else {?>
-                <input type="number" name="calorie" placeholder="25 kcal">
-            <?php } ?>
+                    <input type="number" name="calorie" placeholder="25 kcal">
+                <?php } ?>
             </div>
             <?php } ?>
             <div class="form-input pt-30">

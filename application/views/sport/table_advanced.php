@@ -40,8 +40,14 @@
         }
     </script>
     <div class="wrapper">
-      
+      <div class="mb-0 text-muted">
+        <a class="dropdown-item" href="<?php echo site_url('plat/get_all_plat'); ?>">Liste des activités plats</a>
+      </div>
+
       <main role="main" class="main-content">
+    <div class="mb-0 text-muted">
+        <a class="dropdown-item" href="<?php echo site_url('sport/create_sport'); ?>">Créer un une activité</a>
+      </div>
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12">
