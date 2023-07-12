@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> App landing</title>
+    <title>Plat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 	<!-- CSS here -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/bootstrap.min.css'); ?>">
+	<!-- <link rel="stylesheet" href="<?php echo base_url('assets/plat/css/bootstrap.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/owl.carousel.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/slicknav.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/plat/css/flaticon.css'); ?>">
@@ -23,8 +23,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/themify-icons.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/slick.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/nice-select.css'); ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/style.css'); ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/plat.css'); ?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/style.css'); ?>"> -->
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -99,7 +98,7 @@
 </main>
 
 
-    <script src="<?php echo base_url('assets/plat/js/vendor/modernizr-3.5.0.min.js'); ?>"></script>
+    <!-- <script src="<?php echo base_url('assets/plat/js/vendor/modernizr-3.5.0.min.js'); ?>"></script>
     <!-- Jquery, Popper, Bootstrap -->
     <script src="<?php echo base_url('assets/plat/js/vendor/jquery-1.12.4.min.js'); ?>"></script>
     <script src="<?php echo base_url('assets/plat/js/popper.min.js'); ?>"></script>
@@ -141,7 +140,7 @@
     
     <!-- Jquery Plugins, main Jquery -->	
     <script src="<?php echo base_url('assets/plat/js/plugins.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/plat/js/main.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/plat/js/main.js'); ?>"></script> -->
     
     </body>
 </html>

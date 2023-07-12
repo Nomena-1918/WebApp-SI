@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/nice-select.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/style.css');?> ">
     <link rel="stylesheet" href="<?php echo base_url('assets/plat/css/_modification_style.css');?> ">
+	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/login.css'); ?>">
 
 </head>
 <body>
@@ -40,7 +41,7 @@
         <div class="login-form" id="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="index.html"><img src="assets/img/logo/loder.png" alt=""></a>
+                <a href="index.html"><img src="<?php echo base_url('assets/plat/img/hero/frutis.jpg') ?>" alt=""></a>
             </div>
             <h2>Login Here</h2>
             <div class="form-input">
@@ -51,11 +52,10 @@
                 <label for="name">Password</label>
                 <input type="password" name="password" placeholder="Password">
             </div>
-            <div >
-       
-       <input type="checkBox" name="checkAdmin" placeholder="Confirm Password">
-       <label for="name">Is admin </label>
-   </div>
+            <div class="check">
+                <input type="checkBox" name="checkAdmin" placeholder="Confirm Password">
+                <label for="name" class="isAdmin">Is admin </label>
+            </div>
             <div class="form-input">
                 <label for="name">
                 <?php  if (isset($message))  { ?>
@@ -64,14 +64,14 @@
                 </label>
             </div>
             <div class="form-input pt-30">
-                <input type="submit" name="submit" value="login">
+                <input type="submit" name="submit" value="log in">
             </div>
 
             
             <!-- Forget Password -->
             <!-- <a href="#" class="forget">Forget Password</a> -->
             <!-- Forget Password -->
-            <a href="<?php echo site_url('InscriptionController/register')?>" class="registration">Registration</a>
+            <a href="<?php echo site_url('InscriptionController/register')?>" class="registration">Sign up</a>
         </div>
     </form>
     <!-- /end login form -->
