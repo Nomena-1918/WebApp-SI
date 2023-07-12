@@ -36,6 +36,12 @@ CREATE TABLE moment(
     heureFin time
 );
 
+CREATE TABLE typeObjectif(
+    id serial PRIMARY KEY,
+    nom varchar(100)
+);
+
+
 CREATE TABLE regime(
     id serial PRIMARY KEY,
     idProfilRegime int,

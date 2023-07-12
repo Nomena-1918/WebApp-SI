@@ -24,11 +24,11 @@ CREATE TABLE profil(
     FOREIGN KEY (idUtilisateur) REFERENCES utilisateur(id)
 );
 
-
+/*
 CREATE TABLE typeObjectif(
     id serial PRIMARY KEY,
     nom varchar(50)
-);
+);*/
 
 CREATE TABLE objectif(
     id serial PRIMARY KEY,
