@@ -42,32 +42,43 @@
 
 <!-- Register -->
 
+<?php if (isset($splat)){ ?>
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin --><?php foreach ($sport->result_array() as $row) { ?>
-    <!-- Login Admin --><?php if ($sport != null) {?>
         <form class="form-default" action="<?php echo site_url('sport/update_sport/'.$row['id']); ?>" method="GET">
-                <?php } else {?>
-    <form class="form-default" action="<?php echo site_url('sport/create_sport')?>" method="GET">
-            <?php } ?>
         
         <div class="login-form">
             <h2>Activite Sportive</h2>
             <div class="form-input">
                 <label for="name">Sport </label>
-                <?php if ($sport != null) {?>
                     <input  type="text" name="sport" placeholder="<?php echo $row['nom'];?>">
-                <?php } else {?>
+            </div>
+             <div class="form-input pt-30">
+                <input type="submit" name="submit" value="Modifier">
+            </div> 
+        </div>
+    </form>
+    <?php } ?>
+</main>
+    <?php } ?>
+
+
+
+<main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
+    <form class="form-default" action="<?php echo site_url('sport/create_sport')?>" method="GET">
+        
+        <div class="login-form">
+            <h2>Activite Sportive</h2>
+            <div class="form-input">
+                <label for="name">Sport </label>
                 <input  type="text" name="sport" placeholder="Activity Name">
-            <?php } ?>
             </div>
              <div class="form-input pt-30">
                 <input type="submit" name="submit" value="Create">
             </div> 
         </div>
     </form>
-    <?php } ?>
 </main>
-
 
 <script src="<?php echo base_url('assets/sport/js/vendor/modernizr-3.5.0.min.js'); ?>"></script>
     <!-- Jquery, Popper, Bootstrap -->

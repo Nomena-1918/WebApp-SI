@@ -8,7 +8,6 @@ class Plat extends CI_Controller{
         $photo = $this->input->get('photo');
         $calorie = $this->input->get('calorie');
 
-
         $data_plat = array();
         $data_plat['nom'] = $plat;
         $data_plat['prix'] = $prix;
@@ -17,6 +16,8 @@ class Plat extends CI_Controller{
         
         $this->load->model('Bdd');
         $this->Bdd->insert('plat',$data_plat);
+        $this->get_all_plat();
+
     }
 
     public function create_plat(){ $this->load->view('plat/plat'); }
@@ -49,6 +50,7 @@ class Plat extends CI_Controller{
 
         $this->load->model('Bdd');
         $this->Bdd->update('plat',"id",$id,$tab);
+        $this->get_all_plat();
     }
 
 }

@@ -46,7 +46,7 @@
 
       <main role="main" class="main-content">
     <div class="mb-0 text-muted">
-        <a class="dropdown-item" href="<?php echo site_url('sport/create_sport'); ?>">Créer un une activité</a>
+        <a class="dropdown-item" href="<?php echo site_url('sport/load_sport'); ?>">Créer un une activité</a>
       </div>
         <div class="container-fluid">
           <div class="row justify-content-center">

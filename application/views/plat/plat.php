@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/plat:img/favicon.ico">
 
 	<!-- CSS here -->
 	<link rel="stylesheet" href="<?php echo base_url('assets/plat/css/bootstrap.min.css'); ?>">
@@ -42,14 +42,12 @@
 
 
 <!-- Register -->
-
+<?php if (isset($splat)){ ?>
 <main class="login-body" data-vide-bg="">
+
+
                 <?php foreach ($plat->result_array() as $row) { ?>
-    <!-- Login Admin --><?php if ($plat != null) {?>
         <form class="form-default" action="<?php echo site_url('plat/update_plat/'.$row['id']); ?>" method="GET">
-                <?php } else {?>
-                    <form class="form-default" action="<?php echo site_url('plat/receive_plat/'); ?>" method="GET">
-                <?php } ?>
         
         <div class="login-form">
             <!-- logo-login -->
@@ -59,37 +57,55 @@
             <h2>Plat</h2>
             <div class="form-input">
                 <label for="name">Nom</label>
-                <?php if ($plat != null) {?>
                     <input  type="text" name="plat" placeholder="<?php echo $row['nom'];?>">
-                <?php } else {?>
-                    <input  type="text" name="plat" placeholder="Nom Plat">
-                <?php } ?>
             </div>
             <div class="form-input">
                 <label for="name">Photo</label>
-                <?php if ($plat != null) {?>
                     <input  type="text" name="photo" placeholder="<?php echo $row['picture'];?>">
-                <?php } else {?>
-                    <input  type="text" name="photo" placeholder="Nom Photo">
-                <?php } ?>
             </div>
             <div class="form-input">
                 <label for="name">Prix</label>
-                <?php if ($plat != null) {?>
                     <input  type="text" name="prix" placeholder="<?php echo $row['prix'];?>">
-                <?php } else {?>
-                    <input type="number" name="prix" placeholder="Prix Plat">
-                <?php } ?>
             </div>
             <div class="form-input">
                 <label for="name">Apport calorique</label>
-                <?php if ($plat != null) {?>
                     <input  type="text" name="calorie" placeholder="<?php echo $row['calorie'];?>">
-                <?php } else {?>
-                    <input type="number" name="calorie" placeholder="25 kcal">
-                <?php } ?>
             </div>
             <?php } ?>
+            <div class="form-input pt-30">
+                <input type="submit" name="submit" value="MODIFIER">
+            </div>
+        </div>
+    </form>
+    <!-- /end login form -->
+    <?php }?>
+</main>
+<main class="login-body" data-vide-bg="">
+                    <form class="form-default" action="<?php echo site_url('plat/receive_plat/'); ?>" method="GET">
+            
+        
+        <div class="login-form">
+            <!-- logo-login -->
+            <div class="logo-login">
+                <a href="index.html"><img src="<?php echo base_url('assets/plat/img/hero/cat-3.jpg'); ?>" alt=""></a>
+            </div>
+            <h2>Plat</h2>
+            <div class="form-input">
+                <label for="name">Nom</label>
+                    <input  type="text" name="plat" placeholder="Nom Plat">
+            </div>
+            <div class="form-input">
+                <label for="name">Photo</label>
+                    <input  type="text" name="photo" placeholder="Nom Photo">
+            </div>
+            <div class="form-input">
+                <label for="name">Prix</label>
+                    <input type="number" name="prix" placeholder="Prix Plat">
+            </div>
+            <div class="form-input">
+                <label for="name">Apport calorique</label>
+                    <input type="number" name="calorie" placeholder="25 kcal">
+            </div>
             <div class="form-input pt-30">
                 <input type="submit" name="submit" value="CREATE">
             </div>
@@ -97,6 +113,7 @@
     </form>
     <!-- /end login form -->
 </main>
+
 
 
     <script src="<?php echo base_url('assets/plat/js/vendor/modernizr-3.5.0.min.js'); ?>"></script>
