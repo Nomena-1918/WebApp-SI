@@ -7,10 +7,13 @@ CREATE TABLE profilAdmin(
 alter table profilAdmin add column email varchar(100);
 alter table profilAdmin add column mdp varchar(50);
 
+-------------------
 CREATE TABLE plat(
     id serial PRIMARY KEY,
+    picture varchar(50),
     nom varchar(50),
-    prixunitaire decimal
+    calorie int,
+    prix decimal
 );
 
 CREATE TABLE sport(
@@ -33,7 +36,6 @@ CREATE TABLE moment(
     heureFin time
 );
 
-
 CREATE TABLE regime(
     id serial PRIMARY KEY,
     idProfilRegime int,
@@ -49,4 +51,3 @@ CREATE TABLE regime(
     FOREIGN KEY (idMoment) REFERENCES moment(id),
     FOREIGN KEY (idTypeObjectif) REFERENCES typeObjectif(id)
 );
-

@@ -1,5 +1,3 @@
-
-
 INSERT INTO genre VALUES (default ,'Homme');
 INSERT INTO genre VALUES (default ,'Femme');
 
