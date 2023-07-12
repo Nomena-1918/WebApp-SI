@@ -30,7 +30,7 @@ if(is_cli()){
    $config['base_url'] = '';
 }
 else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
-   $config['base_url'] = $protocol.$host.'/WebApp-SI/';
+   $config['base_url'] = $protocol.$host.'/projet-si/';
 }
 else {
     $allowed_hosts = ['projet-si.alwaysdata.net/projet-si/'];
